@@ -1,0 +1,10 @@
+{
+  "name": "backend-static-testing-setup",
+  "version": "1.0.0",
+  "description": "Static testing like eslint, prettier etc.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jatin parate <jatin.parate@mlveda.com>",
+  "license": "ISC"
+}
