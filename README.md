@@ -27,7 +27,9 @@
 
 - **eslint-plugin-prettier**: show prettier formatting errors in eslint
 
-- **husky**: for pre-commit hooks to lint and format code before commit.
+- **husky**: for pre-commit hooks to lint and format code before commit
+
+- **lint-staged**: Format staged html, css, scss, js and json files with eslint and prettier
 
   
 
