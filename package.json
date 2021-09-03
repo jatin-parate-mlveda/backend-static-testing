@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write \"src**/*.+(js|json)\"",
+    "prettier": "prettier --ignore-path .gitignore --write \"src**/*.+(js|json)\"",
+    "format": "npm run lint -- --fix",
     "validate": "npm run lint && npm run build",
     "prepare": "husky install"
   },
