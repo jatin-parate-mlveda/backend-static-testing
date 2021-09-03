@@ -1,5 +1,13 @@
 
-# specs used while creating this project
+# Purpose
+Use this setup for new backend projects.
+
+## Features
+- linter and formatter support
+- auto formatting on commit
+- prevent commit if has linting errors
+
+# Versions of tools used while creating this project
 
 - node: v16.4.0
 - npm: v7.18.1
