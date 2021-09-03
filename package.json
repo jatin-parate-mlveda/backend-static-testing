@@ -8,12 +8,14 @@
     "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --ignore-path .gitignore --write \"src**/*.+(js|json)\"",
     "format": "npm run lint -- --fix",
-    "validate": "npm run lint && npm run build",
-    "prepare": "husky install"
+    "validate": "npm run lint",
+    "prepare": "husky install",
+    "start": "node ./src/start.js"
   },
   "author": "jatin parate <jatin.parate@mlveda.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.15.4",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -24,8 +26,10 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
-    "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.4",
-    "@babel/preset-env": "^7.15.4"
+    "@babel/preset-env": "^7.15.4",
+    "@babel/register": "^7.15.3",
+    "core-js": "^3.17.2",
+    "regenerator-runtime": "^0.13.9"
   }
 }

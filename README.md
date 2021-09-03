@@ -31,6 +31,12 @@
 
 - **lint-staged**: Format staged html, css, scss, js and json files with eslint and prettier
 
+- **@babel/register**: To compile babel js at runtime
+
+- **core-js@3**: Required polyfills for ECMA code to support older node versions
+
+- **regenerator-runtime**: Polyfills for generators/yield and async functions
+
   
 
 # *VSCode* settings
