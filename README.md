@@ -23,17 +23,17 @@
 
 - **eslint-plugin-import**: support for ES6+ in eslint
 
-- **eslint-config-prettier**: turn off conflicting rules of prettier with eslint
+- **eslint-config-prettier**: turn off conflicting rules of eslint with prettier
 
 - **eslint-plugin-prettier**: show prettier formatting errors in eslint
 
   
 
-# Work Environment if using *VSCode*
+# *VSCode* settings
 
-- Intall **ESLint** plugin by Dirk Baeumer
+- Intall **ESLint** plugin by **Dirk Baeumer**
 
-- Install **Prettier** plugin by Prettier
+- Install **Prettier** plugin by **Prettier**
 
 - Paste following in vscode's settings.json
    
