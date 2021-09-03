@@ -1,18 +1,18 @@
 
-# Purpose
+## Purpose
 Use this setup for new backend projects.
 
-## Features
+### Features
 - linter and formatter support
 - auto formatting on commit
 - prevent commit if has linting errors
 
-# Versions of tools used while creating this project
+## Versions of tools used while creating this project
 
 - node: v16.4.0
 - npm: v7.18.1
 
-# Scripts
+## Scripts
 
 - lint: to lint the project using eslint
 - format: format the code using prettier only (can be used for files other than .js and .json)
@@ -21,7 +21,7 @@ Use this setup for new backend projects.
 
   
 
-# Tools used
+## Tools used
 
 - **eslint**: for linting
 
@@ -47,7 +47,7 @@ Use this setup for new backend projects.
 
   
 
-# *VSCode* settings
+## *VSCode* settings
 
 - Intall **ESLint** plugin by **Dirk Baeumer**
 
