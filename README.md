@@ -1,8 +1,10 @@
-
 ## Purpose
-Use this setup for new backend projects.
+
+- Use this setup for new backend projects.
+- see [SETUP.md](SETUP.md) file for setup instructions.
 
 ### Features
+
 - linter and formatter support
 - auto formatting on commit
 - prevent commit if has linting errors
@@ -18,8 +20,6 @@ Use this setup for new backend projects.
 - format: format the code using prettier only (can be used for files other than .js and .json)
 - validate: first validate and format the code using eslint and then build the project
 - prepare: install husky while running **npm install**
-
-  
 
 ## Tools used
 
@@ -45,20 +45,16 @@ Use this setup for new backend projects.
 
 - **regenerator-runtime**: Polyfills for generators/yield and async functions
 
-  
-
-## *VSCode* settings
+## _VSCode_ settings
 
 - Intall **ESLint** plugin by **Dirk Baeumer**
 
 - Install **Prettier** plugin by **Prettier**
 
 - Paste following in vscode's settings.json
-   
 
-     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 
 - If you want to autoformat on save
-   
 
-     "editor.formatOnSave": true
+  "editor.formatOnSave": true
