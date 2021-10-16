@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Static testing like eslint, prettier etc.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --ignore-path .gitignore --write \"src**/*.+(js|json)\"",
     "format": "npm run lint -- --fix",
-    "validate": "npm run lint",
+    "validate": "npm run lint && npm test",
     "prepare": "husky install",
-    "start": "node ./src/start.js"
+    "start": "NODE_ENV=production node ./src/start.js",
+    "start:local": "NODE_ENV=local node ./src/start.js"
   },
   "author": "jatin parate <jatin.parate@mlveda.com>",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.0",
+    "jest": "^27.2.5",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },
@@ -30,6 +32,7 @@
     "@babel/preset-env": "^7.15.4",
     "@babel/register": "^7.15.3",
     "core-js": "^3.17.2",
+    "dotenv": "^10.0.0",
     "regenerator-runtime": "^0.13.9"
   }
 }
