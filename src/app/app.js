@@ -15,7 +15,7 @@ app.use((_req, _res, next) => next(NotFound('Page not found!')));
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, _next) => {
   const code = err instanceof HttpError ? err.status : 500;
-  res.json({
+  res.status(code).json({
     code,
     message: err.message,
   });
