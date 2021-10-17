@@ -4,6 +4,8 @@ module.exports = {
       name: 'app',
       script: 'npm',
       args: 'run start',
+      kill_timeout: 3000,
+      wait_ready: true,
       env_production: {
         NODE_ENV: 'production',
       },
