@@ -1,9 +1,14 @@
-import * as fs from 'fs';
-import { promisify } from 'util';
-import sum from './sum';
+import './global/configure-logger';
+import { createServer } from 'http';
+import { app } from './app';
+import { getLogger } from './global/getLogger';
 
-console.log(sum(1, 2));
+const logger = getLogger('index.js');
 
-promisify(fs.readdir)('.').then(result => {
-  console.log(result);
+const server = createServer(app);
+
+const port = parseInt(process.env.PORT || '3000', 10);
+
+server.listen(port, () => {
+  logger.debug(`Started listening on port: ${port}`);
 });
