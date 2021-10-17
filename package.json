@@ -10,7 +10,8 @@
     "format": "npm run lint -- --fix",
     "validate": "npm run lint && npm test && npm run build",
     "prepare": "husky install",
-    "start": "npm run build && NODE_ENV=production node ./dist/index.js",
+    "start": "npm run build && node ./dist/index.js",
+    "start:prod": "pm2 start --env production",
     "start:local": "NODE_ENV=local nodemon ./src/start.js"
   },
   "author": "jatin parate <jatin.parate@mlveda.com>",
@@ -39,6 +40,8 @@
     "express": "^4.17.1",
     "http-errors": "^1.7.2",
     "log4js": "^6.3.0",
+    "morgan": "^1.10.0",
+    "pm2": "^5.1.2",
     "regenerator-runtime": "^0.13.9"
   }
 }

@@ -1,7 +1,7 @@
 import { configure } from 'log4js';
 
 const appenders = {};
-const appendersList = [];
+const appendersList = ['dateFile'];
 let logLevel = 'info';
 
 if (process.env.NODE_ENV === 'local' || process.env.NODE_ENV === 'test') {
@@ -22,14 +22,12 @@ appenders.dateFile = {
 
 configure({
   appenders,
+  pm2: true,
+  pm2InstanceVar: 'INSTANCE_ID',
   categories: {
     default: {
       appenders: appendersList,
       level: logLevel,
-    },
-    file: {
-      appenders: ['dateFile'],
-      level: 'info',
     },
   },
 });

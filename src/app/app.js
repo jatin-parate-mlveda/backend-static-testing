@@ -1,11 +1,28 @@
 import express from 'express';
 import cors from 'cors';
 import { NotFound, HttpError } from 'http-errors';
+import morgan from 'morgan';
 import { appRouter } from './app.router';
+import { getLogger } from '../global/getLogger';
 
 export const app = express();
+const requestLogger = getLogger('request');
 
 app.use(cors({ origin: '*' }));
+
+const {
+  env: { NODE_ENV },
+} = process;
+
+if (NODE_ENV === 'local' || NODE_ENV === 'test') {
+  app.use(
+    morgan('tiny', {
+      stream: {
+        write: str => requestLogger.debug(str),
+      },
+    }),
+  );
+}
 
 app.use(appRouter);
 
