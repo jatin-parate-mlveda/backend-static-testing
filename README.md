@@ -8,6 +8,7 @@
 - linter and formatter support
 - auto formatting on commit
 - prevent commit if has linting errors
+- unit/integration and e2e tests with jest
 
 ## Versions of tools used while creating this project
 
@@ -16,10 +17,14 @@
 
 ## Scripts
 
-- lint: to lint the project using eslint
-- format: format the code using prettier only (can be used for files other than .js and .json)
-- validate: first validate and format the code using eslint and then build the project
-- prepare: install husky while running **npm install**
+- `lint`: to lint the project using eslint
+- `format`: format the code using prettier only (can be used for files other than .js and .json)
+- `validate`: first validate and format the code using eslint and then build the project
+- `prepare`: install husky while running **npm install**
+- `build`: to build src folder
+- `start`: build and start project from build directory
+- `start:local`: run project locally using nodemon and inline babel compiler
+- `test`: test using `jest` and `supertest`
 
 ## Tools used
 
@@ -44,6 +49,10 @@
 - **core-js@3**: Required polyfills for ECMA code to support older node versions
 
 - **regenerator-runtime**: Polyfills for generators/yield and async functions
+
+- **jest**: For tests
+
+- **supertest**: For e2e tests
 
 ## _VSCode_ settings
 
