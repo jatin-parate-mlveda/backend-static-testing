@@ -68,6 +68,13 @@
   - run `npm install`
   - run `npm run start:local`
 
+## Tasks ran on commit
+
+- runs `lint-staged` which runs `eslint` and `prettier` for staged files
+- runs `testAndValidateBuild` script
+  - which tests only changed files and
+  - runs build command to test if there is no issue in building with babel
+
 ## _VSCode_ settings
 
 - Intall **ESLint** plugin by **Dirk Baeumer**
