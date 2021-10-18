@@ -62,7 +62,11 @@
 
 ## Instructions
 
-- Prefer [env](env) file for env variables setup
+- Prefer [env](env) file for environment variables setup
+- to run locally
+  - rename `env` file to `.env.local`
+  - run `npm install`
+  - run `npm run start:local`
 
 ## _VSCode_ settings
 
