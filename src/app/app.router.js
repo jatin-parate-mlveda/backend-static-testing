@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { notifyFrontEndError } from './app.controller';
 import { todosRouter } from './todos/todos.router';
 // import async from 'async';
 
@@ -29,6 +30,7 @@ appRouter.use('/todos', todosRouter);
 const jsonResponse = {
   message: 'Hello, world!',
 };
+
 appRouter.get('/', async (_req, res) => {
   // await awaitData();
   // for (let i = 0; i < 10_00_000; i += 1) {
@@ -37,3 +39,5 @@ appRouter.get('/', async (_req, res) => {
   // }
   res.json(jsonResponse);
 });
+
+appRouter.post('/frontend-error', notifyFrontEndError);

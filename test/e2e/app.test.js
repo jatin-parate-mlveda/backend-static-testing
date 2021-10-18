@@ -20,3 +20,9 @@ describe('[GET] /random', () => {
     expect(res.statusCode).toEqual(404);
   });
 });
+
+describe('[POST] /frontend-error', () => {
+  test('returns success status', async () => {
+    await request(app).post('/frontend-error').send({ data: 123 }).expect(200);
+  });
+});
