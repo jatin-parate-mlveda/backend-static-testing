@@ -26,9 +26,9 @@
 - `start`: build and start project from build directory
 - `start:local`: run project locally using nodemon and inline babel compiler
 - `test`: test using `jest` and `supertest`
-- `clinic:doctor`: runs clinic doctor
-- `clinic:flame`: generates clinic flame graph
-- `clinic:bubbleprof`: generates bubble graph by clinic js
+- `clinic:doctor`: runs clinic doctor **(only for reference)**
+- `clinic:flame`: generates clinic flame graph **(only for reference)**
+- `clinic:bubbleprof`: generates bubble graph by clinic js **(only for reference)**
 
 ## Tools used
 
