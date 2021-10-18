@@ -1,2 +1,3 @@
-DB_URL=mongodb://localhost
-PORT=3000
+# replace with suitable variables
+DB_URL=mongodb://localhost # MongoDB database url (connection string)
+PORT=3000 # Port number on which this app will run (if not given, defaults to 3000)
