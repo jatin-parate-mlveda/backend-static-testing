@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { todosRouter } from './todos/todos.router';
 // import async from 'async';
 
 // const awaitData = callback => {
@@ -23,13 +24,16 @@ import { Router } from 'express';
 
 export const appRouter = Router();
 
+appRouter.use('/todos', todosRouter);
+
+const jsonResponse = {
+  message: 'Hello, world!',
+};
 appRouter.get('/', async (_req, res) => {
   // await awaitData();
   // for (let i = 0; i < 10_00_000; i += 1) {
   //   i -= 1;
   //   i += 1;
   // }
-  res.json({
-    message: 'Hello, world!',
-  });
+  res.json(jsonResponse);
 });
