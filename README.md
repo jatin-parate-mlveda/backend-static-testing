@@ -60,6 +60,10 @@
 
 - **clinic.js**: For finding performance problems
 
+## Instructions
+
+- Prefer [env](env) file for env variables setup
+
 ## _VSCode_ settings
 
 - Intall **ESLint** plugin by **Dirk Baeumer**
