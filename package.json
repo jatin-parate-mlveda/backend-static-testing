@@ -12,12 +12,17 @@
     "prepare": "husky install",
     "start": "npm run build && node ./dist/index.js",
     "start:prod": "pm2 start --env production",
-    "start:local": "NODE_ENV=local nodemon ./src/start.js"
+    "start:local": "NODE_ENV=local nodemon ./src/start.js",
+    "clinic:doctor": "npm run build && NODE_ENV=local clinic doctor --on-port 'autocannon localhost:$PORT' -- node ./dist/index.js",
+    "clinic:flame": "npm run build && NODE_ENV=local clinic flame --on-port 'autocannon localhost:$PORT' -- node ./dist/index.js",
+    "clinic:bubbleprof": "npm run build && NODE_ENV=local clinic bubbleprof --on-port 'autocannon localhost:$PORT' -- node ./dist/index.js"
   },
   "author": "jatin parate <jatin.parate@mlveda.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.15.4",
+    "autocannon": "^6.5.0",
+    "clinic": "^9.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -34,6 +39,7 @@
     "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@babel/register": "^7.15.3",
+    "async": "^3.2.1",
     "core-js": "^3.17.2",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",

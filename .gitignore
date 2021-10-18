@@ -3,6 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vs,webstorm,webstorm+iml,webstorm+all,vim
 
 ### Node ###
+# Clinic JS
+.clinic
+
 # Logs
 logs
 *.log

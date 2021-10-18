@@ -9,6 +9,7 @@
 - auto formatting on commit
 - prevent commit if has linting errors
 - unit/integration and e2e tests with jest
+- clinic.js for finding potential performance bottlenecks
 
 ## Versions of tools used while creating this project
 
@@ -25,6 +26,9 @@
 - `start`: build and start project from build directory
 - `start:local`: run project locally using nodemon and inline babel compiler
 - `test`: test using `jest` and `supertest`
+- `clinic:doctor`: runs clinic doctor
+- `clinic:flame`: generates clinic flame graph
+- `clinic:bubbleprof`: generates bubble graph by clinic js
 
 ## Tools used
 
@@ -53,6 +57,8 @@
 - **jest**: For tests
 
 - **supertest**: For e2e tests
+
+- **clinic.js**: For finding performance problems
 
 ## _VSCode_ settings
 
