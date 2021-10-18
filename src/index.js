@@ -7,6 +7,7 @@ import { setupProcessEvents } from './global/setup-process-events';
 import { connectToDb } from './global/connect-to-db';
 
 const logger = getLogger('index.js');
+logger.debug(`Running with env: "${process.env.NODE_ENV}"`);
 
 const server = createServer(app);
 

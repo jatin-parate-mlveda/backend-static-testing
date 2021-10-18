@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "watch": ["src", "package.json", ".env.local"],
+  "ignore": ["**/*.test.js", "__tests__/*", "dist", ".clinic"],
+  "exec": "node src/start.js",
+  "env": {
+    "NODE_ENV": "local"
+  }
+}

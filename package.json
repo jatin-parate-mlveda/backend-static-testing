@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "start": "npm run build && node ./dist/index.js",
     "start:prod": "pm2 start --env production",
-    "start:local": "NODE_ENV=local nodemon ./src/start.js",
+    "start:local": "nodemon --config .nodemonrc.json",
     "clinic:doctor": "npm run build && NODE_ENV=local clinic doctor --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js",
     "clinic:flame": "npm run build && NODE_ENV=local clinic flame --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js",
     "clinic:bubbleprof": "npm run build && NODE_ENV=local clinic bubbleprof --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js"
