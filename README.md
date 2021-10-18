@@ -62,7 +62,7 @@
 
 ## Instructions
 
-- Prefer [env](env) file for environment variables setup
+- Refer [env](env) file for environment variables setup
 - to run locally
   - rename `env` file to `.env.local`
   - run `npm install`
