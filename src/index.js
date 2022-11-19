@@ -1,10 +1,10 @@
-import './global/setup-env';
-import './global/configure-logger';
+import 'dotenv/config';
+import './global/configure-logger.js';
 import { createServer } from 'http';
-import { app } from './app';
-import { getLogger } from './global/getLogger';
-import { setupProcessEvents } from './global/setup-process-events';
-import { connectToDb } from './global/connect-to-db';
+import { app } from './app/index.js';
+import { getLogger } from './global/getLogger.js';
+import { setupProcessEvents } from './global/setup-process-events.js';
+import { connectToDb } from './global/connect-to-db.js';
 
 const logger = getLogger('index.js');
 logger.debug(`Running with env: "${process.env.NODE_ENV}"`);

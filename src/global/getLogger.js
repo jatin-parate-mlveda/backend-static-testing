@@ -1,4 +1,6 @@
-import { getLogger as createLogger } from 'log4js';
+import log4js from 'log4js';
+
+const { getLogger: createLogger } = log4js;
 
 export const getLogger = name => {
   const logger = createLogger(name);

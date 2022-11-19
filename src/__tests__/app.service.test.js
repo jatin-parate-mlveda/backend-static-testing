@@ -1,4 +1,4 @@
-import { sum } from '../app/app.service';
+import { sum } from '../app/app.service.js';
 
 describe('sum', () => {
   test('adds numbers correctly', () => {

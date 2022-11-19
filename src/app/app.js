@@ -1,9 +1,10 @@
 import express, { json } from 'express';
+import 'express-async-errors';
 import cors from 'cors';
 import morgan from 'morgan';
-import { appRouter } from './app.router';
-import { getLogger } from '../global/getLogger';
-import { globalErrorHandler, globalNotFoundHandler } from './app.controller';
+import { appRouter } from './app.router.js';
+import { getLogger } from '../global/getLogger.js';
+import { globalErrorHandler, globalNotFoundHandler } from './app.controller.js';
 
 export const app = express();
 const requestLogger = getLogger('request');

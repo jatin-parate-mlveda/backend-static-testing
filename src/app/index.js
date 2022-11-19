@@ -1,2 +1,2 @@
-export * from './app';
-export * from './app.router';
+export * from './app.js';
+export * from './app.router.js';

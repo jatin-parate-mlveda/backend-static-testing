@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../../src/app';
+import { app } from '../../src/app/index.js';
 
 describe('[GET] /', () => {
   test('returns valid json', async () => {

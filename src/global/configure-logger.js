@@ -1,4 +1,6 @@
-import { configure } from 'log4js';
+import log4js from 'log4js';
+
+const { configure } = log4js;
 
 const appenders = {};
 const appendersList = ['dateFile'];

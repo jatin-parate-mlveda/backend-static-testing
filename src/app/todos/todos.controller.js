@@ -1,7 +1,9 @@
-import { InternalServerError } from 'http-errors';
+import HttpErrors from 'http-errors';
 import { Error as MongooseError } from 'mongoose';
-import { getLogger } from '../../global/getLogger';
-import { getAll, create } from './todos.service';
+import { getLogger } from '../../global/getLogger.js';
+import { getAll, create } from './todos.service.js';
+
+const { InternalServerError } = HttpErrors;
 
 const logger = getLogger('todosController');
 

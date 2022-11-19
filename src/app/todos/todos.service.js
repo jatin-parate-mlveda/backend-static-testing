@@ -1,4 +1,4 @@
-import { Todo } from './todos.model';
+import { Todo } from './todos.model.js';
 
 export const getAll = async () => Todo.find({}).lean();
 

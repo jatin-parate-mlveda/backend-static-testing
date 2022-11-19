@@ -1,6 +1,8 @@
 import { Error as MongooseError } from 'mongoose';
-import { HttpError, NotFound } from 'http-errors';
-import { getLogger } from '../global/getLogger';
+import HttpErrors from 'http-errors';
+import { getLogger } from '../global/getLogger.js';
+
+const { HttpError, NotFound } = HttpErrors;
 
 const logger = getLogger('appController');
 

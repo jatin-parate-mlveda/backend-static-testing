@@ -1,8 +1,3 @@
-import { resolve } from 'path';
-import { config } from 'dotenv';
+import dotEnv from 'dotenv';
 
-const { error } = config({ path: resolve(`.env.${process.env.NODE_ENV}`) });
-
-if (error) {
-  throw error;
-}
+dotEnv.config('.env.test');
