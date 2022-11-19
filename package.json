@@ -14,9 +14,9 @@
     "start": "node ./src/index.js",
     "start:prod": "pm2 start --env production",
     "start:local": "nodemon --config .nodemonrc.json",
-    "clinic:doctor": "NODE_ENV=local clinic doctor --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js",
-    "clinic:flame": "NODE_ENV=local clinic flame --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js",
-    "clinic:bubbleprof": "NODE_ENV=local clinic bubbleprof --on-port 'autocannon localhost:$PORT/todos' -- node ./dist/index.js"
+    "clinic:doctor": "NODE_ENV=local clinic doctor --on-port 'autocannon localhost:$PORT/todos' -- node ./src/index.js",
+    "clinic:flame": "NODE_ENV=local clinic flame --on-port 'autocannon localhost:$PORT/todos' -- node ./src/index.js",
+    "clinic:bubbleprof": "NODE_ENV=local clinic bubbleprof --on-port 'autocannon localhost:$PORT/todos' -- node ./src/index.js"
   },
   "author": "jatin parate <jatin.parate@mlveda.com>",
   "license": "ISC",
